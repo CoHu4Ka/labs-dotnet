@@ -1,0 +1,15 @@
+C:\Users\CoHu4Ka\OneDrive\Desktop\C#\Lab_2\bin\Debug\net7.0\Lab_2.exe
+C:\Users\CoHu4Ka\OneDrive\Desktop\C#\Lab_2\bin\Debug\net7.0\Lab_2.deps.json
+C:\Users\CoHu4Ka\OneDrive\Desktop\C#\Lab_2\bin\Debug\net7.0\Lab_2.runtimeconfig.json
+C:\Users\CoHu4Ka\OneDrive\Desktop\C#\Lab_2\bin\Debug\net7.0\Lab_2.dll
+C:\Users\CoHu4Ka\OneDrive\Desktop\C#\Lab_2\bin\Debug\net7.0\Lab_2.pdb
+C:\Users\CoHu4Ka\OneDrive\Desktop\C#\Lab_2\obj\Debug\net7.0\Lab_2.csproj.AssemblyReference.cache
+C:\Users\CoHu4Ka\OneDrive\Desktop\C#\Lab_2\obj\Debug\net7.0\Lab_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CoHu4Ka\OneDrive\Desktop\C#\Lab_2\obj\Debug\net7.0\Lab_2.AssemblyInfoInputs.cache
+C:\Users\CoHu4Ka\OneDrive\Desktop\C#\Lab_2\obj\Debug\net7.0\Lab_2.AssemblyInfo.cs
+C:\Users\CoHu4Ka\OneDrive\Desktop\C#\Lab_2\obj\Debug\net7.0\Lab_2.csproj.CoreCompileInputs.cache
+C:\Users\CoHu4Ka\OneDrive\Desktop\C#\Lab_2\obj\Debug\net7.0\Lab_2.dll
+C:\Users\CoHu4Ka\OneDrive\Desktop\C#\Lab_2\obj\Debug\net7.0\refint\Lab_2.dll
+C:\Users\CoHu4Ka\OneDrive\Desktop\C#\Lab_2\obj\Debug\net7.0\Lab_2.pdb
+C:\Users\CoHu4Ka\OneDrive\Desktop\C#\Lab_2\obj\Debug\net7.0\Lab_2.genruntimeconfig.cache
+C:\Users\CoHu4Ka\OneDrive\Desktop\C#\Lab_2\obj\Debug\net7.0\ref\Lab_2.dll
