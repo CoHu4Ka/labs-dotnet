@@ -1,50 +1,33 @@
-﻿
-Console.WriteLine("Hello, Jerry");
-
-// Функция, печатающая A B C
-
-void PrintABC()
+﻿// 1. Пример с int (тип-значение)
+void Example1()
 {
-    Console.WriteLine("A");
-    Console.WriteLine("B");
-    Console.WriteLine("C");
+    int a = 5;
+    int b = 6;
+    a = b;
+    b = 7;
+    Console.WriteLine(a);    
 }
 
-// Вызов 3 раза с задержкой
-
-for (int i = 0; i < 3; i++)
+// 2. Пример с вычислением
+void Example2()
 {
-    PrintABC();
-    Thread.Sleep(500); // задержка 0.5 сек
+    int a = 5;
+    int b = a + 6;
+    a = 7;
+    Console.WriteLine(b);
 }
 
-// Три функции A, B, C:
-
-void A()
+// 3. Пример со string (ссылочный тип)
+void Example3()
 {
-    Console.WriteLine("A");
-    B();
-    C();
+    string a = "a";
+    string b = a;
+    a = "b";
+    Console.WriteLine(a);
+}
+// 4. Ошибка с string
+void Example4()
+{
+    string a = 5;
 }
 
-void B()
-{
-    Console.WriteLine("B");
-}
-
-void C()
-{
-    Console.WriteLine("C");
-}
-
-
-//Вопросы на понимание
-
-//  Что если функцию нигде не вызвать?
-// Она не выполнится. В C# код функции просто загружается в программу, но выполняется только тогда, когда её вызовут.
-
-//  Важен ли порядок определения функций?
-// Нет, в C# можно вызвать функцию даже если она написана ниже в файле. Компилятор заранее знает все объявления методов.
-
-//  Что такое "определение"?
-// Определение функции — это её полное описание (с сигнатурой и телом)

@@ -1,50 +1,56 @@
-﻿
-Console.WriteLine("Hello, Jerry");
+﻿using System;
 
-// Функция, печатающая A B C
-
-void PrintABC()
+struct Prices
 {
-    Console.WriteLine("A");
-    Console.WriteLine("B");
-    Console.WriteLine("C");
+    public int Drink;
+    public int First;
+    public int Second;
 }
 
-// Вызов 3 раза с задержкой
-
-for (int i = 0; i < 3; i++)
+struct Order
 {
-    PrintABC();
-    Thread.Sleep(500); // задержка 0.5 сек
+    public int DrinkCount;
+    public int FirstCount;
+    public int SecondCount;
 }
 
-// Три функции A, B, C:
-
-void A()
+class Program
 {
-    Console.WriteLine("A");
-    B();
-    C();
+    static void Main()
+    {
+        // Цены (одни для всех клиентов)
+        Prices prices = new Prices { Drink = 10, First = 20, Second = 30 };
+
+        // Клиент 1 
+        {
+            Order order = new Order { DrinkCount = 2, FirstCount = 1, SecondCount = 0 };
+            int total = CalculateOrder(prices, order);
+            Console.WriteLine("Стоимость заказа клиента 1: " + total);
+        }
+
+        // Клиент 2 
+        {
+            Order order = new Order { DrinkCount = 1, FirstCount = 2, SecondCount = 1 };
+            int total = CalculateOrder(prices, order);
+            Console.WriteLine("Стоимость заказа клиента 2: " + total);
+        }
+    }
+
+    static int CalculateOrder(Prices prices, Order order)
+    {
+        return order.DrinkCount * prices.Drink +
+               order.FirstCount * prices.First +
+               order.SecondCount * prices.Second;
+    }
 }
 
-void B()
-{
-    Console.WriteLine("B");
-}
 
-void C()
-{
-    Console.WriteLine("C");
-}
+// Почему так делают (зачем?)
 
+// Блоки { }: позволяют использовать одинаковые имена переменных для разных клиентов (у клиента1 есть order, у клиента2 тоже order, но они не мешают друг другу).
 
-//Вопросы на понимание
+// struct/class для цен: если цены изменятся, нужно менять их только в одном месте.
 
-//  Что если функцию нигде не вызвать?
-// Она не выполнится. В C# код функции просто загружается в программу, но выполняется только тогда, когда её вызовут.
+// struct/class для заказа: чтобы хранить всё, что заказал клиент, в одной переменной.
 
-//  Важен ли порядок определения функций?
-// Нет, в C# можно вызвать функцию даже если она написана ниже в файле. Компилятор заранее знает все объявления методов.
-
-//  Что такое "определение"?
-// Определение функции — это её полное описание (с сигнатурой и телом)
+// функция: чтобы не копировать один и тот же код вычисления суммы для каждого клиента.
